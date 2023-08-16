@@ -1,10 +1,15 @@
 body{
     margin: 0;
     padding: 0;
-    font-size:1em;
+    font-size:62.5%;
   font-family: 'Ysabeau SC', sans-serif;
   background-color: #0B2447;
 color:#A5D7E8;
+position:relative;
+
+display:flex;
+flex-direction: column;
+height:100vh;
 }
 
 nav{
@@ -12,12 +17,13 @@ nav{
     justify-content: center;
     align-items: center;
    
-    height:3em;
+    height:3rem;
     width:100%;
 }
 .items{
-    padding:0 2em;
-    font-size:1.3em;
+    padding:0 2vw;
+    font-size:1.3rem;
+    font-weight:300 ;
 }
 
 
@@ -25,29 +31,31 @@ nav{
     text-align:center;
 }
 .my-pic{
-      height:8em;
-      width:8em;
+      height:8rem;
+      width:8rem;
     border-radius: 50%;
 }
 .index-heading{
-    font-size: 5em;
+    font-size: 5rem;
     font-weight:500;
     font-family: 'Ysabeau SC', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 0.4em;
-    margin-top:0.5em;
-    margin-bottom:0.2em;
-
+    letter-spacing: 2.3rem;
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+    
 }
 .index-sub-heading {
+    width:40vw;
     margin-top:0.1em;
-  font-size:2.2em;
+  font-size:2rem;
   font-weight:400;
   font-family: 'Ysabeau SC', sans-serif;
+  
 
 }
 .below-heading{
-    font-size:1.7em;
+    font-size:1.5rem;
     font-weight:250;
     text-align:left;
     font-family: 'Gruppo', sans-serif;
@@ -55,7 +63,7 @@ nav{
 .hero-section{
     margin:auto;
     width:37vw;
-    
+    font-size: 0.8rem;
     text-align: left;
 }
 .block{
@@ -66,14 +74,14 @@ nav{
 
 }
 .dotted{
-    width:8em;
+    width:8rem;
     border-style: dotted none none;
-    border-width:0.4em;
+    border-width:0.4rem;
     border-color:#b6daf4;
    
 }
 .pic{
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 .items:hover {
@@ -98,9 +106,9 @@ a:active{
     width:35vw;
     text-align: justify;
     margin:auto;
-    margin-top:20vh;
-    margin-bottom:19vh;
-    font-size: 1.2em;
+    margin-top:4rem;
+    margin-bottom:0rem;
+    font-size: 1rem;
 }
 
 /* work */
@@ -108,9 +116,49 @@ a:active{
 .work-div{
     margin:auto;
     width:40vw;
-    margin:5vw auto;
+    margin:3vw auto;
     text-align: justify;
+    
+}
+.work-para{
+    font-size:1rem;
+}
+.work-heading{
+    font-size: 2.4rem;
 }
 .div2{
    margin-bottom:20vh;
+}
+.footer{
+
+
+text-align: center;
+/* position:fixed; */
+ /* right:0;
+left:0; 
+ bottom:0;
+top:90%; */
+font-size:1.1rem;
+margin-top: auto;
+}
+
+@media (max-width:1250px){
+    html{
+        font-size: 60%;
+    }
+}
+
+@media (max-width:980px){
+    .hero-section{
+        width:40vw;
+    }
+}
+
+@media (max-width:897px){
+    .hero-section{
+        width:45vw;
+    }
+    .index-heading{
+    padding-left:1rem;
+    }
 }
